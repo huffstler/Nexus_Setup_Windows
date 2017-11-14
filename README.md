@@ -86,7 +86,7 @@ Contact <$nexusadmin$> so that they can give you a nexus account with the proper
    <!--This sends everything else to /public-->
       <id>central</id>
       <name>central</name>
-      <url>http://adsappsdev:8496/repository/WsfsBuild/</url>
+      <url>http://dogsarecute:1234/repository/repogroup/</url>
       <mirrorOf>*</mirrorOf>
    </mirror>
 </mirrors>
