@@ -1,6 +1,6 @@
 # Installing and using Nexus 3.6.x for Windows
 
-# [Table of Contents]
+# Table of Contents
 
 ## Getting Started
 - [Installing Nexus](#installing-nexus)
@@ -20,7 +20,7 @@
 - [Deploying to Nexus](#deploying-to-nexus)
 - [WebHooks](#webhooks)
 
-## [Helpful Links](#helpful-links)
+## [Helpful Links](#useful-links)
 
 # Getting Started
 
@@ -79,6 +79,18 @@ Contact <$nexusadmin$> so that they can give you a nexus account with the proper
       </server>
    </servers>
 ```
+      - You will also need to add a `mirror` tag to tell nexus to mirror the central repository, it should look something like this: 
+```xml
+<mirrors>
+   <mirror>
+   <!--This sends everything else to /public-->
+      <id>central</id>
+      <name>central</name>
+      <url>http://adsappsdev:8496/repository/WsfsBuild/</url>
+      <mirrorOf>*</mirrorOf>
+   </mirror>
+</mirrors>
+```
     
 2. Now we have to change the pom of your project.
     - There are 2 specific attributes you'll most likely need to add to your project pom
@@ -117,4 +129,4 @@ Contact <$nexusadmin$> so that they can give you a nexus account with the proper
 
 # Deploying To Nexus            
 
-# Helpful Links
+# Useful Links
