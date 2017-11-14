@@ -79,7 +79,7 @@ Contact <$nexusadmin$> so that they can give you a nexus account with the proper
       </server>
    </servers>
 ```
-      - You will also need to add a `mirror` tag to tell nexus to mirror the central repository, it should look something like this: 
+   - You will also need to add a `mirror` tag to tell nexus to mirror the central repository, it should look something like this: 
 ```xml
 <mirrors>
    <mirror>
